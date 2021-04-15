@@ -14,15 +14,13 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 while (key && index <= 3) {
   const num = getRandom();
   const dif = num % 2 === 0 ? 'yes' : 'no';
-  const difOther = num % 2 === 0 ? 'no' : 'yes';
   console.log('Question: ', num);
 
   const answer = readlineSync.question('Your answer: ');
-  console.log('Your answer: ', answer);
   if (answer === dif) {
-    console.log('Correct');
+    console.log('Correct!');
   } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was ${difOther}.`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${dif}'.`);
     key = false;
   }
 
