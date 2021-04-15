@@ -7,7 +7,7 @@ export const getName = () => {
 };
 
 export const getRandom = () => {
-	const max = 100;
+  const max = 100;
 
-	return Math.floor(Math.random() * max);
+  return Math.floor(Math.random() * max);
 };
