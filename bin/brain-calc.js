@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import { getName, getRandom } from '../src/cli.js';
 
-const index = 1;
+let index = 1;
 let key = true;
 let result;
 const operations = ['+', '-', '*'];
@@ -13,9 +13,9 @@ const name = getName();
 console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
-while (key && index < 3) {
-  const a = getRandom();
-  const b = getRandom();
+while (key && index <= 3) {
+  const a = getRandom(20);
+  const b = getRandom(20);
   const operand = operations[getRandom(3)];
 
   console.log(`Question: ${a} ${operand} ${b}`);
@@ -42,6 +42,8 @@ while (key && index < 3) {
     console.log(`Let's try again, ${name}!`);
     key = false;
   }
+  
+  index += 1;
 }
 
 if (key) {
