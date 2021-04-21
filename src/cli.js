@@ -6,6 +6,4 @@ export const getName = () => {
   return name;
 };
 
-export const getRandom = (max = 100) => {
-  return Math.floor(Math.random() * max);
-};
+export const getRandom = (max = 100) => Math.floor(Math.random() * max);
