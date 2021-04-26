@@ -19,8 +19,8 @@ while (key && index <= 3) {
   const operand = operations[getRandom(3)];
 
   console.log(`Question: ${a} ${operand} ${b}`);
-    
-    result = getOperation(a, b, operand);
+
+  result = getOperation(a, b, operand);
 
   const answer = readlineSync.question('Your answer: ');
   if (+answer === result) {
@@ -30,7 +30,7 @@ while (key && index <= 3) {
     console.log(`Let's try again, ${name}!`);
     key = false;
   }
-  
+
   index += 1;
 }
 
