@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { getName, getRandom } from '../src/cli.js';
+import { getName, getRandom, getOperation } from '../src/cli.js';
 
 let index = 1;
 let key = true;
@@ -19,20 +19,8 @@ while (key && index <= 3) {
   const operand = operations[getRandom(3)];
 
   console.log(`Question: ${a} ${operand} ${b}`);
-
-  switch (operand) {
-    case '+':
-      result = a + b;
-      break;
-    case '-':
-      result = a - b;
-      break;
-    case '*':
-      result = a * b;
-      break;
-    default:
-      break;
-  }
+    
+    result = getOperation(a, b, operand);
 
   const answer = readlineSync.question('Your answer: ');
   if (+answer === result) {
