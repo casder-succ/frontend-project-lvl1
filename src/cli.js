@@ -7,3 +7,32 @@ export const getName = () => {
 };
 
 export const getRandom = (max = 100) => Math.floor(Math.random() * max);
+
+export const getOperation = (a, b, operand) => {
+    let result;
+    switch (operand) {
+        case '+':
+            result = a + b;
+            break;
+        case '-':
+            result = a - b;
+            break;
+        case '*':
+            result = a * b;
+            break;
+        default:
+            break;
+    }
+    return result;
+};
+
+export const getGcd = (a, b) => {
+    while (a > 0 && b > 0) {
+        if (a > b) {
+            a = Math.floor(a % b);
+        } else {
+            b = Math.floor(b % a);
+        }
+    }
+    return a + b;
+};
