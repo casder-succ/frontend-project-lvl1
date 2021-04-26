@@ -6,7 +6,7 @@ export const getName = () => {
   return name;
 };
 
-export const getRandom = (max = 100) => Math.floor(Math.random() * max);
+export const getRandom = (max = 100) => Math.floor(Math.random() * max + 1);
 
 export const getOperation = (a, b, operand) => {
   let result;
