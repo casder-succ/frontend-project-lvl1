@@ -32,4 +32,6 @@ while (key && index <= 3) {
 }
 if (key) {
   console.log(`Congratulations, ${name}!`);
+} else {
+    console.log(`Let's try again, ${name}!`);
 }
