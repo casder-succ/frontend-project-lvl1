@@ -40,13 +40,27 @@ export const getGcd = (num1, num2) => {
 };
 
 export const getProgression = (num1, q) => {
-    const progression = [];
-    let b = num1;
+  const progression = [];
+  let b = num1;
 
-    for (let i = 0; i < 10; i += 1) {
-        progression.push(b);
-        b += q;
+  for (let i = 0; i < 10; i += 1) {
+    progression.push(b);
+    b += q;
+  }
+
+  return progression;
+};
+
+export const isPrime = (num) => {
+  let key = 0;
+  for (let i = 1; i <= num; i += 1) {
+    if (num % i === 0) {
+      key += 1;
     }
+  }
 
-    return progression;
+  if (key === 2) {
+    return 'yes';
+  }
+  return 'no';
 };
