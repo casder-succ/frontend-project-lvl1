@@ -32,7 +32,6 @@ while (key && index <= 3) {
     index += 1;
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${elem}'.`);
-    console.log(`Let's try again, ${name}!`);
     key = false;
   }
 }
