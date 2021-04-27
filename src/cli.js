@@ -38,3 +38,15 @@ export const getGcd = (num1, num2) => {
   }
   return a + b;
 };
+
+export const getProgression = (num1, q) => {
+    const progression = [];
+    let b = num1;
+
+    for (let i = 0; i < 10; i += 1) {
+        progression.push(b);
+        b += q;
+    }
+
+    return progression;
+};
