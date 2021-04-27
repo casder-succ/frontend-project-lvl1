@@ -14,7 +14,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 while (key && index <= 3) {
   const num = getRandom();
   const dif = num % 2 === 0 ? 'yes' : 'no';
-  console.log('Question: ', num);
+  console.log(`Question: ${num}`);
 
   const answer = readlineSync.question('Your answer: ');
   if (answer === dif) {
