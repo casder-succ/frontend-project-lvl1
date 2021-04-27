@@ -9,7 +9,7 @@ let key = true;
 console.log('Welcome to the Brain Games!');
 
 const name = getName();
-console.log(`hello, ${name}`);
+console.log(`Hello, ${name}!`);
 
 console.log('Find the greatest common divisor of given numbers.');
 while (key && index <= 3) {
