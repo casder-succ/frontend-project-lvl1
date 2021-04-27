@@ -8,3 +8,4 @@ Asciinema:
 https://asciinema.org/a/xyOlffdabg2hMYxmR9C9LzwXd
 https://asciinema.org/a/BXgVdGJvS0s3TMmBMfL9TBVqS
 https://asciinema.org/a/PpYmfqTaRjq6G7NcGArfMnMof
+https://asciinema.org/a/RbzRSx9t2KQY4X94XdApcvbug
