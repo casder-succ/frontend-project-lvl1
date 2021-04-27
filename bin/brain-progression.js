@@ -18,7 +18,7 @@ while (key && index <= 3) {
 
   const progrElem = getProgression(a, b);
 
-  const someIndex = getRandom(10);
+  const someIndex = getRandom(9);
   const elem = progrElem[someIndex];
 
   progrElem[someIndex] = '..';
