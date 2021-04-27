@@ -16,7 +16,7 @@ console.log('What is the result of the expression?');
 while (key && index <= 3) {
   const a = getRandom(20);
   const b = getRandom(20);
-  const operand = operations[getRandom(3)];
+  const operand = operations[getRandom(3) - 1];
 
   console.log(`Question: ${a} ${operand} ${b}`);
 
